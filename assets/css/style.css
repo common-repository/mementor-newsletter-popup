@@ -1,0 +1,159 @@
+.mementor-newsletter-noscroll {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.mementor-newsletter-popup {
+  background-color: rgba(0, 0, 0, .75);
+  bottom: 0;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  z-index: 1090;
+
+}
+.mementor-newsletter-popup .newsletter-container {
+  background: #fff;
+  box-shadow: 0px 1px 15px rgba(65, 65, 65, .05);
+  margin: 150px auto 50px;
+  max-width: 750px;
+  opacity: 0;
+  padding: 0 15px;
+  position: relative;
+  width: auto;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.mementor-newsletter-popup .newsletter-container .newsletter-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.mementor-newsletter-popup .newsletter-container .media,
+.mementor-newsletter-popup .newsletter-container .form-content {
+  float: left;
+  min-height: 1px;
+  padding: 0 15px;
+  position: relative;
+  width: 50%;
+}
+.mementor-newsletter-popup .newsletter-container .media {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.mementor-newsletter-popup .newsletter-container .media .no-thank-you {
+  bottom: 0;
+  color: #222;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 45px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+.mementor-newsletter-popup .newsletter-container .media .no-thank-you:hover {
+  color: #111;
+  text-decoration: none;
+}
+.mementor-newsletter-popup .no-thank-you.mobile-only {
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+.mementor-newsletter-popup .newsletter-container .form-content {
+  padding: 35px;
+}
+.mementor-newsletter-popup .newsletter-container .form-content h2 {
+  color: #222;
+  font-size: 20px;
+  margin: 0 0 25px;
+}
+.mementor-newsletter-popup .newsletter-container .form-content p {
+  color: #222;
+  font-size: 14px;
+  margin: 0 0 25px;
+}
+.mementor-newsletter-popup .newsletter-container .form-content input {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  color: #aaa;
+  height: 45px;
+  line-height: 25px;
+  margin: 0;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+}
+.mementor-newsletter-popup .newsletter-container .form-content input::-webkit-input-placeholder { color: #aaa; }
+.mementor-newsletter-popup .newsletter-container .form-content input::-moz-placeholder { color: #aaa; }
+.mementor-newsletter-popup .newsletter-container .form-content input:-ms-input-placeholder { color: #aaa; }
+.mementor-newsletter-popup .newsletter-container .form-content input:-moz-placeholder { color: #aaa; }
+.mementor-newsletter-popup .newsletter-container .form-content input:focus {
+  border-color: inherit;
+  box-shadow: none;
+}
+.mementor-newsletter-popup .newsletter-container .form-content input[type=text],
+.mementor-newsletter-popup .newsletter-container .form-content input[type=email] {
+  background: #f4f4f4;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.mementor-newsletter-popup .newsletter-container .form-content input[type=text]:focus,
+.mementor-newsletter-popup .newsletter-container .form-content input[type=email]:focus {
+  background: #e4e4e4;
+}
+.mementor-newsletter-popup .newsletter-container .form-content input[type=submit] {
+  background-color: #43A047;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+}
+.mementor-newsletter-popup .newsletter-container .form-content input[type=submit]:hover {
+  background-color: #388E3C;
+  color: #fff;
+}
+.mementor-newsletter-popup .newsletter-container .form-content small {
+  color: #aaa;
+  display: block;
+  padding-top: 20px;
+}
+.mementor-newsletter-popup .mobile-only {
+  display: none;
+}
+@media (max-width: 767px) {
+  .mementor-newsletter-popup {
+    padding: 0 15px;
+  }
+  .mementor-newsletter-popup .newsletter-container {
+    margin: 50px auto;
+  }
+  .mementor-newsletter-popup .newsletter-container .form-content {
+    width: 100%;
+  }
+  .mementor-newsletter-popup .newsletter-container .media {
+    display: none;
+  }
+  .mementor-newsletter-popup .mobile-only {
+    display: inline-block;
+  }
+}

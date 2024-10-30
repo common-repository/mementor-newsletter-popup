@@ -1,0 +1,15 @@
+.mementor-wrapper .preview {
+  background-image: url('https://mementor.no/bilder/customer-login.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.mementor-wrapper .preview .mementor-newsletter-popup {
+  position: relative;
+  display: block;
+}
+.mementor-wrapper .preview .mementor-newsletter-popup .newsletter-container {
+  margin-top: 50px;
+  opacity: 1;
+}
